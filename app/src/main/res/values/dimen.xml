@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_button_size">100sp</dimen>
+    <dimen name="edt_layout_width">302sp</dimen>
+    <dimen name="edt_layout_height">48sp</dimen>
+</resources>

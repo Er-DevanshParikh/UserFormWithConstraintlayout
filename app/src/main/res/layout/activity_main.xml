@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_save"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_title"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="@dimen/img_button_size"
+        android:layout_height="@dimen/img_button_size"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/userprofile"
+        android:contentDescription="@string/tv_avatar"
+        app:layout_constraintBottom_toTopOf="@id/textView_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="@dimen/edt_layout_width"
+        android:layout_height="@dimen/edt_layout_height"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="name"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="@dimen/edt_layout_width"
+        android:layout_height="@dimen/edt_layout_height"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="emailAddress"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_email"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="@dimen/edt_layout_width"
+        android:layout_height="@dimen/edt_layout_height"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter Your Password"
+        android:autofillHints="password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_password"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="248dp"
+        android:text="@string/tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tv_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name" />
+
+    <TextView
+        android:id="@+id/textView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email" />
+
+    <TextView
+        android:id="@+id/textView_user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_user_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_password" />
+
+    <RadioGroup
+        android:id="@+id/rg_user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_user_type"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword">
+
+        <RadioButton
+            android:id="@+id/radioButton_admin"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_admin" />
+
+        <RadioButton
+            android:id="@+id/radioButton_client"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rb_client" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_hobbies"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_user_type" />
+
+    <RadioGroup
+        android:id="@+id/rg_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/textView_hobbies"
+        app:layout_constraintTop_toBottomOf="@+id/rg_user_type">
+
+        <CheckBox
+            android:id="@+id/cb_cricket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_cricket"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="435dp" />
+
+        <CheckBox
+            android:id="@+id/cb_football"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_football"
+            tools:layout_editor_absoluteX="174dp"
+            tools:layout_editor_absoluteY="435dp" />
+
+        <CheckBox
+            android:id="@+id/cb_reading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cb_reading"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="435dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/btn_save"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_hobbies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_hobbies"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

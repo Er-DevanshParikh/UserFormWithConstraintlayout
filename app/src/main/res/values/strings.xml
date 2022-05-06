@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">User Form With Constraintlayout</string>
+    <string name="tv_title">User Form </string>
+    <string name="tv_avatar">"Image"</string>
+    <string name="tv_name">"Name"</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_password">Password</string>
+    <string name="tv_user_type">User Type</string>
+    <string name="tv_hobbies">Hobbies</string>
+    <string name="rb_admin">Admin</string>
+    <string name="rb_client">Client</string>
+    <string name="cb_cricket">Cricket</string>
+    <string name="cb_football">Football</string>
+    <string name="cb_reading">Reading</string>
+    <string name="btn_save">Save</string>
+</resources>
